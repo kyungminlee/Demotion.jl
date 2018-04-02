@@ -2,7 +2,7 @@
 __precompile__()
 export demote
 
-import Collections
+import DataStructures
 
 demote(obj::Dict) = Dict((demote(k), demote(v)) for (k, v) in obj)
 demote(obj::AbstractArray) = [demote(x) for x in obj]
